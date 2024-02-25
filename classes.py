@@ -111,7 +111,7 @@ class AddressBook(UserDict):
                         birthday_this_year += timedelta(days=1)
                     upcoming_birthdays.append((name, birthday_this_year))
         if upcoming_birthdays:
-            return '\n'.join(f'{name} : {datetime.strftime(birthday, '%d-%m-%Y')}' for name, birthday in upcoming_birthdays)
+            return '\n'.join(f'{name}: {datetime.strftime(birthday, '%d-%m-%Y')}' for name, birthday in upcoming_birthdays)
         else:
             return 'No upcoming birthdays next 7 days.'
 
